@@ -8,13 +8,23 @@ import { NvD3Module } from 'ng2-nvd3';
 import 'd3';
 import 'nvd3';
 
+// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MaterialModule } from '@angular/material'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StackChartComponent } from './stack-chart/stack-chart.component'
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StackChartComponent
   ],
   imports: [
     BrowserModule,
-    NvD3Module 
+    NvD3Module,
+    // BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
